@@ -1,0 +1,17 @@
+#commonComponentDiv{
+    border: 1px solid black;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;   
+       margin-left: 30px;
+      margin-right: 30px;
+  }
+  label{
+      margin-left: 30px;
+  }
+  #Error{
+    color: red;
+  }
+  
+  

@@ -1,0 +1,15 @@
+<label for="Additional Data">Additional Data: </label>
+<form [formGroup]="CommonCompForm" >
+  <div id="commonComponentDiv">
+    <select formControlName="DropDown" tabindex="0"  (change)="selected($event)">
+      <option value="Number" selected >Number</option>
+      <option value="String">String</option>
+      <option value="Hexacode">Hexacode</option>
+      <option value="Boolean">Boolean</option>
+      <option value="Binary">Binary</option>  
+    </select>
+    <input type="text" formControlName="AddValue" placeholder="Selected Data.." tabindex="1" (input)="inputfield($event)"><br>
+   
+  </div>
+  <div *ngIf="AddValue  && AddValue.errors?.['pattern']" id ="Error">{{errormessage}}</div>
+</form>

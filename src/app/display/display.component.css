@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    width: 50vw;
+}
+.Indetails{
+    display: flex;
+    justify-content: space-around;
+}
